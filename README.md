@@ -5,6 +5,8 @@
 
 ---
 
+## Author：dollmarker
+
 
 
 ## ⚠⚠⚠授权与免责⚠⚠⚠
@@ -121,8 +123,6 @@ python xls.py                     # 不带参数 = 扫当前目录
 
 跑完会打印**载体对照**：有多少号码不在任何单元格中、分布在哪些记录里。
 
-> ⚠️ 本脚本**默认不脱敏**，产物含完整 PII。用完记得删，别提交到仓库 —— `.gitignore` 已拦截其全部产物。
-
 ### 4. AI Agent 版 —— `src-xlsx-skill/`
 
 把 `src-xlsx-skill/` 整个目录放进你的 skills 目录。Agent 在遇到「公示附件 / 名单 / 身份证号泄露 / 附件解析」类任务时会自动加载这套方法论，按检查清单逐项过，并按 `references/report-skeleton.md` 出报告。
@@ -185,3 +185,7 @@ python xls.py                     # 不带参数 = 扫当前目录
 
 - `.xls` / `.xlsx` 解析依赖内嵌的 [SheetJS Community Edition](https://sheetjs.com/)（Apache-2.0）
 - 判定算法：GB 11643-1999 / ISO 7064 MOD 11-2（身份证校验位）、Luhn（银行卡校验）
+
+## LAST:
+
+如果你觉得有用的话，不妨点个 Star 吧 ⭐，万分感谢🥰🥰🥰🥰
