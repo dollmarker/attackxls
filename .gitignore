@@ -1,0 +1,53 @@
+# ============================================================
+# 本仓库是 PII 泄露审计工具，产物可能包含真实个人信息。
+# 提交前请确认：没有任何取证数据被意外纳入版本控制。
+# ============================================================
+
+# 取证目录：含未脱敏原始附件，绝对不能提交
+evidence/
+**/evidence/
+*.evidence/
+
+# 扫描结果与目标清单
+out.json
+result.json
+*.result.json
+urls.txt
+hits.txt
+
+# xls.py 的产物：完整表格 + 号码清单，含未脱敏 PII，绝对不能提交
+*_数据.txt
+*_数据.xlsx
+*_数据(*).xlsx
+*_身份证号.txt
+*_身份证号_15位.txt
+
+# 原始办公文档（公示台账、名单、花名册等，含真实个人信息）
+# 需要放示例文件时用：git add -f 你的示例.xlsx
+*.xls
+*.xlsx
+*.xlsm
+*.et
+*.ett
+*.doc
+*.docx
+*.wps
+*.ppt
+*.pptx
+*.pdf
+*.zip
+*.rar
+*.7z
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
