@@ -1,3 +1,5 @@
+#### 有关原理见https://esh.emic.edu.cn/community/detail/strategy/2109606206470660098?source=my_content
+
 # xls / xlsx 附件 PII 泄露审计工作流
 
 > 面向「公示 / 名单 / 花名册 / 补贴 / 拟录取」类**公开附件**的个人敏感信息（PII）泄露审计工具链。
